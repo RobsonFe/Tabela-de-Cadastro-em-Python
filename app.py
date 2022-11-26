@@ -1,3 +1,9 @@
+#Projeto Feito por Robson Ferreira
+
+#Aluno: Robson Ferreira da Silva 
+#Curso de Analise e Desenvolvimento de Sistemas
+#1º Periodo
+
 print("\t\tTabela de Cadastro\n")
 
 n = int(input("Quantas pessoas serão cadastradas ? "))
