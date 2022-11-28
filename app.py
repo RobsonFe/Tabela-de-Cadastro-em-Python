@@ -6,7 +6,6 @@
 
 print("\t\tTabela de Cadastro\n")
 
-
 lista = []
 
 while True:
