@@ -6,25 +6,28 @@
 
 print("\t\tTabela de Cadastro\n")
 
-n = int(input("Quantas pessoas serão cadastradas ? "))
 
-lista = [0 for x in range (n)]
+lista = []
 
-for i in range(0,n):
+while True:
     
     nome = input("Nome completo: ")
-    lista[i] = nome
+    lista.append(nome)
     idade = int (input("Qual a sua idade ? "))
-    lista[i] = idade
+    lista.append(idade)
     profissao = input("Qual a sua profissão ? ")
-    lista[i] = profissao
+    lista.append(profissao)
     sexo = input ("Qual o sexo ? (F/M) ")
-    lista[i] = sexo
+    lista.append(sexo)
     salario = float(input("Qual o seu salario ? "))
-    lista[i] = salario 
+    lista.append(salario)
+    resp = input("Deseja fazer outro cadastro ? SIM ou NAO ? ")
 
+    if resp.upper() == "NAO": 
+        break 
+
+print ("\t\tPessoas Cadastradas\n")
 print()
 
-print("\t\tPessoas Cadastradas \n")
-for i in range(0,n):
-    print (lista[i])
+for lista in lista:
+      print (lista)
